@@ -6,3 +6,10 @@ comments: true
 sharing: true
 footer: true
 ---
+
+Keywords
+===
+    Self-taught
+    Enthusiasm
+    Self-motivated
+    Task-oriented
