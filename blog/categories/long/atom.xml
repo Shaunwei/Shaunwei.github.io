@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Long | Life-long Learner.__init__()]]></title>
   <link href="http://shaunwei.github.io/blog/categories/long/atom.xml" rel="self"/>
   <link href="http://shaunwei.github.io/"/>
-  <updated>2014-11-22T18:12:50-08:00</updated>
+  <updated>2014-11-24T15:15:01-08:00</updated>
   <id>http://shaunwei.github.io/</id>
   <author>
     <name><![CDATA[Shaun Wei]]></name>
@@ -12,6 +12,46 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Get Ready to Program - Part 1]]></title>
+    <link href="http://shaunwei.github.io/blog/2014/11/23/get-ready-to-program/"/>
+    <updated>2014-11-23T17:14:00-08:00</updated>
+    <id>http://shaunwei.github.io/blog/2014/11/23/get-ready-to-program</id>
+    <content type="html"><![CDATA[<p>As a new programmer in each team, I found myself always spend a lot setting up new environment.</p>
+
+<p>Recently, I am exploring a software environment platform and application distribution tool called Docker. (<a href="https://www.docker.com/">https://www.docker.com/</a>)</p>
+
+<p>I would like to spend some time to explore it. To make it useful to distribute my personal working environment.</p>
+
+<p>Docker is much easy to setup and learn than I thought.
+<a href="https://www.docker.com/tryit/">https://www.docker.com/tryit/</a> is a great link to try out some basic commands.</p>
+
+<p>To be able to use Docker on my mac, I have done only few steps.</p>
+
+<ol>
+<li><p>Install boot2docker in mac (<a href="https://github.com/boot2docker/boot2docker">https://github.com/boot2docker/boot2docker</a>). boot2docker is a lightweight linux software, which used to run Docker container. After downloaded boot2docker, just double click it. Then the boot2docker will setup environment variables for mac. So, before you run your docker command, do remember to run
+<code>
+boot2docker start
+</code></p></li>
+<li><p>Then simply put
+<code>
+docker run hello-world
+</code>
+Congratulations. That&rsquo;s the hello world for your docker environment.
+What does <code>run</code> command do? Running an application inside a container.
+Under the hood of this command. Docker checks if these is any <code>image</code> installed in your docker. Because this is nothing in mac yet, so Docker checks public image registry, if there is any image works as default. In this case, docker download hello-world image for mac.</p></li>
+<li><p>The real run command
+<code>
+docker run ubuntu:14.04 /bin/echo 'Hello world'
+</code>
+This run command use the image ubuntu:14.04 to run as a container. Then use this container to run an application, in this case, this application is <code>/bin/echo 'Hello world'</code>, which is only print <code>Hello world</code> in your terminal.</p></li>
+</ol>
+
+
+<p>That&rsquo;s the basic setups and basic usage for docker. It setup a clean environment and make it available to distribute, which is like the version control software. In the following parts, I will be exploring more potential usage to make docker works as a personal environment setup tool.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Fresh New Start]]></title>
